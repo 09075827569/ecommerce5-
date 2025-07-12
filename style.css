@@ -118,6 +118,7 @@ gap: 20px;
  border: 1px solid black;
     border-radius: 5px;
     outline-color: black;
+    height: 568px;
       
 
 }
@@ -272,4 +273,8 @@ font-family:  Special Gothic Condensed One;
     background-color: #f1f1f1;
     color: #439643;
     scale: (0)x;
+}
+.cards{
+    display: flex;
+    margin-top: 40px;
 }
