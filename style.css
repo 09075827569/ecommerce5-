@@ -4,8 +4,9 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
- 
-      font-family: 'poppins';
+ font-size: 14px;
+ font-family:  Helvetica, sans-serif;
+    
     
 }
 body{
@@ -19,8 +20,11 @@ body{
    background-color: #439643;
     color: aliceblue;
     overflow: hidden;
-    position: fixed;
-    width: 100dvw;
+
+
+}
+.navbar2 a{
+    font-size: 13px;
 }
 .section1 div{
     display: flex;
@@ -42,7 +46,7 @@ padding: 10px;
     display: flex;
     gap: 10px;
     margin-right: 70px;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 .section2 div ul{
     display: flex;
@@ -76,6 +80,7 @@ gap: 20px;
  .section2 div ul li a{
     color: black;
       width: 60px;
+      
 
 }
 .section2 div ul li :hover{
@@ -229,6 +234,7 @@ color: black;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+     width: 800px;
 }
 .write .btn{
     background:linear-gradient( rgb(235, 243, 89),white );
@@ -276,5 +282,181 @@ font-family:  Special Gothic Condensed One;
 }
 .cards{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+       box-shadow: 1px black;
+}
+.cards div{
+    margin-left: 80px;
+    background: white;
+    height: 100px;
+    width: 400px;
+    margin-right: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+   
+}
+.cards div:hover{
+    box-shadow: ;
+}
+.card2{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+cursor: pointer;
+
+}
+.card2:hover{
+    box-shadow: 10px black;
+}
+.card2 div{
+  
+    width: 370px;
+    border-radius: 10px;
+    height: 200px;
+    padding: 10px;
+
+}
+.box1{
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+   
+}
+.box2{
+ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/image/joshua-fernandez-dxAwStHCCgk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+}
+ .box3{
+     background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/fawazlul-rizqi--enfLijmvPA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+}
+.card2 div .text1{
+    color: #e6f23b;
+    font-size: 17px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.card2 div h4{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card2 div button{
+    background-color: #228b22;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transform: 0.2s ease;
+}
+.card2 div button:hover{
+    transform: scalex(1.1);
+}
+.new{
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+.new p span{
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 10px;
+    color: black;
+}
+.new p{
+    font-size: 12px;
+    color: rgb(124, 123, 123);
+}
+.card3{
+    display: flex;
+ flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+.card3 div{
+    width: 200px;
+    height: 350px;
+       background: rgb(210, 210, 210);
+       border-radius: 10px;
+       border: 1.5px solid black;
+       cursor: pointer;
+
+}
+.cart1{
+ line-height: 30px;   
+}
+.cart1 .bttttn{
+  
+    margin-top: 10px;
+    z-index: -1;
+    background:red;
+    margin-left: 20px;
+    height: 20px;
+    width: 50px;
+    border: none;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+.cart1 img{
+  margin-top: 0px;
+  padding-top: 0;
+}
+.btttnn{
+   background-color: #439643; 
+   margin-left: 10px;
+   border: none;
+   height: 30px;
+   border-radius: 20px;
+   width: 90px;
+   color: #f1f1f1;
+   cursor: ;
+}
+.cart1 p{
+   
+    margin-top: 20px;
+  color: black;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.cart1 span{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.btn5{
+    width: 90%;
+    height: 40px;
+    padding-bottom: 20px;
+    background: white;
+    color: #439643;
+    border: none;
+    text-align: left;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border:1px solid #228b22;
+    cursor: pointer;
 }
