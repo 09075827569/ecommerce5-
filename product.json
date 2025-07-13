@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":2,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":3,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":4,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":5,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":6,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":7,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":8,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    },
+     {
+        "id":9,
+        "name":"power oil",
+        "price": 200,
+        "image":"image/POWER-OIL-removebg-preview.png"
+    }
+]

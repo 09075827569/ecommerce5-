@@ -1,0 +1,143 @@
+
+body{
+    margin: 0;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+header img{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+header .icon-cart{
+    position: relative;
+}
+header .icon-cart span{
+display: flex;
+width: 30px;
+height: 30px;
+background-color: red;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color: aliceblue;
+position: absolute;
+top: 50%;
+right: -20%;
+
+
+}
+.listproduct .item img{
+width: 30%;
+filter: drop-shadow(0 50px 20px #0009);
+}
+.listproduct {
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    gap: 20px;
+
+}
+.listproduct .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.listproduct .item h2{
+    font-weight: 500;
+    font-size: large;
+
+}
+.listproduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listproduct .item button{
+    background-color: #353432;
+    color: #eeeee6;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.carttab{
+    width: 400px;
+    background-color: #353432;
+    color: #eeeee6;
+    position: fixed;
+   inset: 0 -400px 0 auto;
+   display: grid;
+   grid-template-rows: 70px 1fr 70px;
+   transition: .5s;
+}
+body.showcart .carttab{
+    inset: 0 0 0 auto;
+}
+body.showcart .container{
+    transform: translateX(-250px);
+}
+.carttab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.carttab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.carttab .btn button{
+    background-color: yellow;
+    border: none;
+    font-family: poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.carttab .btn .close{
+    background-color: aliceblue;
+}
+.carttab .listcart .item img{
+    width: 100%;
+
+}
+.carttab .listcart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+}
+.listcart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eeeee6;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listcart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eeeee6;
+}
+.listcart .item:nth-child(even){
+    /* background-color: rgb(158, 158, 16); */
+}
+.listcart{
+    overflow: auto;
+}
+.listcart::-webkit-scrollbar{
+    width: 0;
+}
