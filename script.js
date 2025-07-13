@@ -4,6 +4,9 @@ let body = document.querySelector('body');
 let listProductHTML = document.querySelector('.listproduct')
 let listCartHTML = document.querySelector('.listcart');
 let iconCartSpan = document.querySelector ('.icon-cart span')
+let cartIcon = document.querySelector('.icon')
+
+
 
 let listProduct = []
 let cart = []
