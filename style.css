@@ -587,7 +587,7 @@ body .showcart .card3{
 
 @media only screen and (max-width:564px){
     .section1{
-        width: 215%;
+        width: 200%;
     }
     .section2{
         display: block;
@@ -600,8 +600,19 @@ body .showcart .card3{
       font-size: 10px;
       
     }
-       .section2 div .special{
-    margin-left: 0;
-    gap: 0;
+  
+    .section3{
+     margin: 0;
+     padding: 0;
+     display: flex;
+     margin-left: 40px;
+     padding-left: 500px;
+     margin-top: 20px;
     }
+    .section3.input{
+    margin-left: 30px;
+        padding: 0;
+        width: 90px;
+    }
+   
 }
