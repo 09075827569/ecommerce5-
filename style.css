@@ -267,7 +267,7 @@ font-family:  Special Gothic Condensed One;
 .bttn{
       height: 50px;
     width: 160px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: #228b22;
         border: none;
         font-size: 20px;
@@ -461,95 +461,70 @@ cursor: pointer;
     border:1px solid #228b22;
     cursor: pointer;
 } */
-
-body{
-    margin: 0;
+.icon-cart span{
+    background-color: red;
+    border-radius:20px ;
+    font-size: 15px;
+    color: #f1f1f1;
+    width: 40px;
+    padding: 5px;
 }
-.container{
-    width: 900px;
-    max-width: 90vw;
-    margin: auto;
+.icon-cart{
+    color: black;
+    font-size: 20px;
+}
+.card3{
+     display: grid;
+     width: 200px;
     text-align: center;
-    padding-top: 10px;
-    transition: transform .5s;
-}
-header img{
-    width: 30px;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    align-items: center;
-}
-header .icon-cart{
-    position: relative;
-}
-header .icon-cart span{
-display: flex;
-width: 30px;
-height: 30px;
-background-color: red;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
-color: aliceblue;
-position: absolute;
-top: 50%;
-right: -20%;
-
-
-}
-.listproduct .item img{
-width: 30%;
-filter: drop-shadow(0 50px 20px #0009);
-}
-.listproduct {
-    display: grid;
     grid-template-columns: 4, 1fr;
     gap: 20px;
-
+    transition: transform .5s;
 }
-.listproduct .item{
+.card3 .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+ 
+}
+.card3 .item{
     background-color: #eeeee6;
     padding: 20px;
     border-radius: 20px;
-
 }
-.listproduct .item h2{
+.card3 .item h2{
     font-weight: 500;
     font-size: large;
-
 }
-.listproduct .item .price{
+.card3 .item .price{
     letter-spacing: 7px;
     font-size: small;
-}
-.listproduct .item button{
-    background-color: #353432;
-    color: #eeeee6;
+} 
+.card3 .item button{
+    background-color: #439643;
+    color: #f1f1f1;
     padding: 5px 10px;
-    border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 10px;
+    border: none;
     cursor: pointer;
-
-}
-.carttab{
-    width: 400px;
-    background-color: #353432;
-    color: #eeeee6;
-    position: fixed;
-   inset: 0 -400px 0 auto;
-   display: grid;
-   grid-template-rows: 70px 1fr 70px;
-   transition: .5s;
 }
 body.showcart .carttab{
     inset: 0 0 0 auto;
+
 }
-body.showcart .container{
-    transform: translateX(-250px);
+body .showcart .card3{
+/* transform: translateX(-250px); */
+}
+.carttab{
+    width: 900px;
+    background-color: #439643;
+    color: #f1f1f1;
+    position: fixed;
+   inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows:70px 1fr 70px;
+    transition: .5s;
+ 
 }
 .carttab h1{
     padding: 20px;
@@ -557,18 +532,20 @@ body.showcart .container{
     font-weight: 300;
 }
 .carttab .btn{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+ 
+    height: 20px;
 }
-.carttab .btn button{
-    background-color: yellow;
+.carttab button{
+    background-color: #f0e7b4;
+    height: 50px;
     border: none;
     font-family: poppins;
     font-weight: 500;
     cursor: pointer;
 }
 .carttab .btn .close{
-    background-color: aliceblue;
+    background-color: #eeeee6;
 }
 .carttab .listcart .item img{
     width: 100%;
@@ -580,27 +557,30 @@ body.showcart .container{
     gap: 10px;
     text-align: center;
     align-items: center;
-    text-align: center;
 }
 .listcart .quantity span{
-    display: inline-block;
+    display: inline-flex;
     width: 25px;
     height: 25px;
     background-color: #eeeee6;
     color: black;
     border-radius: 50%;
     cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 .listcart .quantity span:nth-child(2){
     background-color: transparent;
     color: #eeeee6;
 }
 .listcart .item:nth-child(even){
-    /* background-color: rgb(158, 158, 16); */
+     background-color: gold;
 }
 .listcart{
     overflow: auto;
 }
-.listcart::-webkit-scrollbar{
-    width: 0;
+.container{
+    display: flex;
+    gap: 10px;
 }
