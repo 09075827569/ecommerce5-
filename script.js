@@ -65,13 +65,13 @@ const addCartHTML = () => {
             newCart.classList.add('item');
             newCart.innerHTML = `
             <div class="image">
-    <img src="${product.image}" alt="">
+    <img src="/image/POWER-OIL-removebg-preview.png" alt="">
   </div>
   <div class="name">
     name
   </div>
   <div class="totalprice">
-  ${product.price}
+    200$
   </div>
   <div class="quantity">
     <span class="minus">-</span>
