@@ -321,7 +321,7 @@ cursor: pointer;
 
 }
 .box1{
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png);
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,7 +330,7 @@ cursor: pointer;
    
 }
 .box2{
- background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/joshua-fernandez-dxAwStHCCgk-unsplash.jpg);
+ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/image/joshua-fernandez-dxAwStHCCgk-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
