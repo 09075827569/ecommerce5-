@@ -672,7 +672,7 @@ body .showcart .card3{
       justify-content: center;
      display: grid;
      grid-template-columns: auto auto auto ;
-      margin-left: 90px;
+      margin-left: 100px;
       padding-left: 20px;
     }
     .container div{
