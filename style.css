@@ -226,7 +226,7 @@ color: black;
 } 
 
 .write{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/joan-m-SI0Kx5pVpfA-unsplash.jpg);
+    background: url(image/joan-m-SI0Kx5pVpfA-unsplash.jpg);
     margin-top: 10px;
     height: 400px;
     border-radius: 10px;
