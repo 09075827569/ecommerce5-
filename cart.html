@@ -4,37 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/cart.css">
-</head>
-<body class="">
-  <div class="container">
-    <header>
-      <div class="title">Product</div>
-      <div class="icon-cart"><img src="/image/icons8-cart-100.png" alt="">
-      <span>0</span>
-      </div>
-    </header>
-    <div class="listproduct">
-      <div class="item">
-        <img src="/image/POWER-OIL-removebg-preview.png" alt="">
-        <h2>Name</h2>
-        <div class="price">$200</div>
-        <button class="addcart">
-          Add To cart
-        </button>
-      </div>
-    </div>
-  </div>
+  <link rel="stylesheet" href="cart.css">
 
-  <div class="carttab">
-    <h1>Shopping cart</h1>
-  
-    </div>
-    <div class="btn">
-      <button class="close">CLOSE</button>
-      <button class="checkout">Check Out</button>
+</head>
+<body>
+
+  <div class="header">
+    <p class="logo">logo</p>
+    <div class="cart"><img src="image/icons8-cart-100.png" alt="" width="30px" height="30px"><p id="count">0</p></div>
+  </div>
+  <div class="container">
+  <div id="root"></div> <!-- Products go here -->
+  <div class="sidebar">
+    <div class="head"><p>My Cart</p></div>
+    <div id="cartitem">Your cart is empty</div>
+    <div class="foot">
+      <h3>Total</h3>
+      <h2 id="total">$ 0.00</h2>
     </div>
   </div>
-  <script src="/script.js"></script>
+</div>
+
+  <script src="/script2.js"></script>
 </body>
 </html>

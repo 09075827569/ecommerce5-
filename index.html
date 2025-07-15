@@ -55,8 +55,7 @@
 <a href="#" ><i class="ri-heart-line" id="heart"  ></i></a>
    
    
-<div  class="icon-cart" onclick=""> <a href="cart.html"><img src="image/icons8-cart-100.png" alt="" width="30px" height="30px"></a><span >0</span></div>
-
+<div class="cart"><a href="/cart.html"><img src="image/icons8-cart-100.png" alt="" width="30px" height="30px"></a><p id="count">0</p></div>
     </div>
  </div>
 
@@ -242,7 +241,17 @@
     <button class="checkout">CHECK OUT</button>
    </div>
  </div> -->
-
+iv class="container">
+  <div id="root"></div> <!-- Products go here -->
+  <div class="sidebar">
+    <div class="head"><p>My Cart</p></div>
+    <div id="cartitem">Your cart is empty</div>
+    <div class="foot">
+      <h3>Total</h3>
+      <h2 id="total">$ 0.00</h2>
+    </div>
+  </div>
+</div>
   
  <script src="script2.js" ></script>
 
