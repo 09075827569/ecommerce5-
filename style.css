@@ -629,6 +629,8 @@ body .showcart .card3{
     display: flex;
     width: 70%;
     margin-bottom: 30px;
+      height: 100vh;
+
 }
 #root{
     width: 60%;
@@ -638,17 +640,70 @@ body .showcart .card3{
     
   
 }
-.sidebar{
+
+  .sidebar {
+  /* width: 300px;       
+ 
+ 
+  
+ 
+  background-color: #444;
+  padding: 20px;
+  color: white;
+  max-height: 300px;
+  overflow-y: auto;
     width: 40%;
     border-radius: 5px;
     background-color: rgb(133, 131, 131);
-    margin-left: 20px;
+   
     padding: 15px;
-    text-align: center;
-    top: 0;
-    display: ;
+    text-align: center; */
+
+
+  width: 300px; 
+   z-index: 999;        /* your adjusted width */
+  height: 100vh;        /* makes it full height of the viewport */
+  border-radius: 5px;
+  background-color: rgb(133, 131, 131);
+  margin-left: 950px;
+  padding: 15px;
+  text-align: center;
+  overflow-y: auto;
+   top: 0;
+  left: 0;   
+  display: none;
+  
+  position: fixed;  /* allows scroll if content exceeds height */
+
+
     
 }
+.close-sidebar {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+  
+}
+.sidebar {
+  display: none;
+}
+
+
+.sidebar.show {
+  display: block;
+}
+.rowing {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .head{
     background-color: goldenrod;
     border-radius: 3px;

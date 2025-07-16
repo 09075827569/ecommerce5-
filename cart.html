@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="cart.css">
-
+  <title>My Cart</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 style="text-align:center;">Cart Items</h1>
+  <div id="cart-details" style="padding: 20px;"></div>
 
-  <div class="header">
-    <p class="logo">logo</p>
-    <div class="cart"><img src="image/icons8-cart-100.png" alt="" width="30px" height="30px"><p id="count">0</p></div>
-  </div>
-  <div class="container">
-  <div id="root"></div> <!-- Products go here -->
-  <div class="sidebar">
-    <div class="head"><p>My Cart</p></div>
-    <div id="cartitem">Your cart is empty</div>
-    <div class="foot">
-      <h3>Total</h3>
-      <h2 id="total">$ 0.00</h2>
-    </div>
-  </div>
-</div>
+  <script>
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-  <script src="/script2.js"></script>
+    if (cartItems.length === 0) {
+      document.getElementById('cart-details').innerText = "Your cart is empty.";
+    } else {
+      document.getElementById('cart-details').innerHTML = cartItems.map(item => `
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc;">
+          <img src="${item.image}" width="100px">
+          <h3>${item.title}</h3>
+          <p>Price: $${item.price}.00</p>
+        </div>
+      `).join('');
+    }
+  </script>
 </body>
 </html>
