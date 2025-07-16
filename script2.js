@@ -33,10 +33,21 @@ document.getElementById('root').innerHTML = categories.map((item) => {
 
 let cart = [];
 function addtocart(index) {
-  cart.push({ ...categories[index] });
+  const existingItem = cart.find(item => item.id === categories[index].id);
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.push({ ...categories[index], quantity: 1 });
+  }
+
   displaycart();
   updateTotal();
   document.getElementById("count").innerText = cart.length;
+  toggleCart();
+  saveCartToLocalStorage();
+  document.getElementById("sidebar").style.display = "block";
+}
+
 
   // Show sidebar
   document.querySelector(".sidebar").classList.add("show");
@@ -54,7 +65,7 @@ function addtocart(index) {
 
 }
 
-}
+
 setTimeout(() => {
   document.querySelector(".sidebar").classList.remove("show");
 }, 5000);
@@ -130,9 +141,10 @@ window.onload = function() {
 };
 
 function updateTotal() {
-  const total = cart.reduce((sum, item) => sum + item.price, 0);
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   document.getElementById('total').innerText = `$ ${total.toFixed(2)}`;
 }
+
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
