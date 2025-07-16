@@ -782,7 +782,7 @@ button:hover{
 
 @media only screen and (max-width:564px){
     .section1{
-        width:127%;
+        width:124%;
      padding-left: 0;
         text-align: center;
         display: flex;
