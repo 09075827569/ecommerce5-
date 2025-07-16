@@ -112,15 +112,15 @@ function saveCartToLocalStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// function loadCartFromLocalStorage() {
-//   const saved = localStorage.getItem('cart');
-//   if (saved) {
-//     cart = JSON.parse(saved);
-//     displaycart();
-//     updateTotal();
-//     document.getElementById("count").innerText = cart.length;
-//   }
-// }
+function loadCartFromLocalStorage() {
+  const saved = localStorage.getItem('cart');
+  if (saved) {
+    cart = JSON.parse(saved);
+    displaycart();
+    updateTotal();
+    document.getElementById("count").innerText = cart.length;
+  }
+}
 window.onload = function() {
   loadCartFromLocalStorage();
 };

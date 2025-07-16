@@ -665,7 +665,7 @@ body .showcart .card3{
   height: 100vh;        /* makes it full height of the viewport */
   border-radius: 5px;
   background-color: rgb(133, 131, 131);
-  margin-left: 950px;
+  margin-left: 930px;
   padding: 15px;
   text-align: center;
   overflow-y: auto;
@@ -780,7 +780,7 @@ button:hover{
 
 @media only screen and (max-width:564px){
     .section1{
-        width:121%;
+        width:127%;
      padding-left: 0;
         text-align: center;
         display: flex;
@@ -840,7 +840,7 @@ button:hover{
     .logo{
       width: 300px;
     }
-    .section4 .sidebar{
+    .section4 .sidebar1{
       width: 200px;
       
     }
@@ -850,13 +850,13 @@ button:hover{
     .card2{
         width: 1200px;
     }
-    .sidebar{
+    .sidebar1{
         width: 400px;
         padding: 30px;
         margin-left: 40px;
         font-size: 20px;
     }
-    .sidebar ul{
+    .sidebar1 ul{
     width: 150px;
     }
     .container{
