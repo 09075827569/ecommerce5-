@@ -635,7 +635,7 @@ body .showcart .card3{
 #root{
     width: 60%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
     
   
@@ -727,9 +727,11 @@ body .showcart .card3{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid goldenrod;
+    border: 1px solid rgb(32, 48, 218);
     border-radius: 5px;
     padding: 15px;
+    width: 200px;
+    height: 260px;
 
 
 }
@@ -830,6 +832,9 @@ button:hover{
     width: 1500px;
 
     
+  }
+  #root{
+    margin-left: 410px;
   }
     .section3{
    justify-content: space-between;

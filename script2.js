@@ -4,7 +4,11 @@ const product = [
   { id: 1, image: 'image/POWER-OIL-removebg-preview.png', title: 'ground nut oil', price: 120 },
   { id: 2, image: 'image/POWER-OIL-removebg-preview.png', title: 'red oil', price: 190 },
   { id: 3, image: 'image/POWER-OIL-removebg-preview.png', title: 'sugar', price: 900 },
-  { id: 4, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 }
+  { id: 5, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+   { id: 6, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+    { id: 7, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+     { id: 8, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 }
+  
 ];
 
 // Remove duplicates if necessary (e.g. by id)
