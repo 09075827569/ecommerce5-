@@ -837,7 +837,11 @@ button:hover{
     
   }
   #root{
-    margin-left: 300px;
+    margin-left: 360px;
+ 
+  }
+  .sidebar{
+    margin-left: 900px;
   }
     .section3{
    justify-content: space-between;
