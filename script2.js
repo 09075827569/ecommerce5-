@@ -54,16 +54,9 @@ function addtocart(index) {
 
   // Save to localStorage
   localStorage.setItem("cartItems", JSON.stringify(cart));
-  function addtocart(index) {
-  cart.push({ ...categories[index], quantity: 1 });
-  displaycart();
-  updateTotal();
-  document.getElementById("count").innerText = cart.length;
-  toggleCart(); // Show cart when item is added
-  saveCartToLocalStorage(); // Save to storage
-  document.getElementById("sidebar").style.display = "block";
+  
 
-}
+
 
 
 setTimeout(() => {

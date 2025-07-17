@@ -8,21 +8,51 @@
 <body>
   <h1 style="text-align:center;">Cart Items</h1>
   <div id="cart-details" style="padding: 20px;"></div>
+<body>
+  <h1>Your Cart</h1>
+  <div id="cartitem"></div>
+  <h3>Total: <span id="total">$0.00</span></h3>
+  <span>Items in cart: <span id="count">0</span></span>
+</body>
 
   <script>
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let cart = [];
 
-    if (cartItems.length === 0) {
-      document.getElementById('cart-details').innerText = "Your cart is empty.";
+  window.onload = function () {
+    const saved = localStorage.getItem('cart');
+    if (saved) {
+      cart = JSON.parse(saved);
+      displaycart();
+      updateTotal();
+      document.getElementById("count").innerText = cart.length;
+    }
+  };
+
+  function displaycart() {
+    const cartContainer = document.getElementById('cartitem');
+    if (cart.length === 0) {
+      cartContainer.innerHTML = "Your cart is empty";
     } else {
-      document.getElementById('cart-details').innerHTML = cartItems.map(item => `
-        <div style="margin-bottom:20px; border-bottom:1px solid #ccc;">
-          <img src="${item.image}" width="100px">
-          <h3>${item.title}</h3>
-          <p>Price: $${item.price}.00</p>
+      cartContainer.innerHTML = cart.map((item, index) => `
+        <div class='cart-item'>
+          <div class='row-img'>
+            <img class='rowing' src="${item.image}" />
+          </div>
+          <p style='font-size:12px;'>${item.title}</p>
+          <h2 style='font-size:15px;'>$ ${(item.price * item.quantity).toFixed(2)}</h2>
+          <span>Qty: ${item.quantity}</span>
         </div>
       `).join('');
     }
-  </script>
+  }
+
+  function updateTotal() {
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    document.getElementById('total').innerText = `$ ${total.toFixed(2)}`;
+  }
+</script>
+
+
+  <script></script>
 </body>
 </html>
