@@ -1,3 +1,7 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +9,8 @@
     list-style: none;
     text-decoration: none;
  font-size: 14px;
- font-family:  Helvetica, sans-serif;
+ font-family: Cabin
+;
     
     
 }
@@ -93,9 +98,9 @@ gap: 20px;
 .section3 input{
     width: 600px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 40px;
     height: 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid black;
     outline: blueviolet;
     background: rgb(243, 240, 240);
@@ -115,15 +120,20 @@ gap: 20px;
 .section4{
  display: flex;
 }
+.icon a{
+    color: black;
+    font-size: large;
+}
 .sidebar1{
     text-align: center;
     width: 300px;
     margin-top: 20px;
     margin-left: 20px;
  border: 1px solid black;
-    border-radius: 5px;
+   border-radius: 5px;
     outline-color: black;
     height: 568px;
+    box-shadow: 2px 2px 9px rgb(102, 101, 101);
       
 
 }
@@ -142,9 +152,8 @@ gap: 20px;
     padding-top: 9px;
     cursor: pointer;
     height: 37px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align: center;
+  
+    text-align: left;
     overflow: hidden;
 }
 .dropbtn {
@@ -212,17 +221,27 @@ gap: 20px;
 color: black;
 }
 .sidebar1 ul li{
-    padding: 0;
+    padding: 0px;
+    
 }
 .sidebar1 ul li:hover{
-    background-color: #228b22;
+    background-color: #c1e9c1;
     color: #f1f1f1;
+    border-radius: 5px;
     box-shadow: 2px black;
-    border: px solid rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+    box-shadow: 2px 2px 9px rgb(102, 101, 101);
+
   
 }
+.sidebar1 ul li:nth-child(1){
+    pointer-events: none;
+}
+.sidebar1 ul li:nth-child(12){
+    border-bottom: none;
+}
 .sidebar1 ul li a:hover{
-    color: #f1f1f1;
+ 
 } 
 
 .write{
@@ -235,6 +254,7 @@ color: black;
      background-repeat: no-repeat;
      background-size: cover;
      width: 800px;
+         box-shadow: 2px 2px 9px rgb(102, 101, 101);
 }
 .write .btn{
     background:linear-gradient( rgb(235, 243, 89),white );
@@ -242,7 +262,7 @@ color: black;
     width: 160px;
     font-size: 16px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ;
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -284,11 +304,11 @@ font-family:  Special Gothic Condensed One;
     display: flex;
     margin-top: 30px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
        box-shadow: 1px black;
 }
 .cards div{
-    margin-left: 80px;
+    margin-left: 30px;
     background: white;
     height: 100px;
     width: 400px;
@@ -640,6 +660,14 @@ body .showcart .card3{
     
   
 }
+#root2{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    
+  
+}
 
   .sidebar {
   /* width: 300px;       
@@ -664,7 +692,7 @@ body .showcart .card3{
    z-index: 999;        /* your adjusted width */
   height: 100vh;        /* makes it full height of the viewport */
   border-radius: 5px;
-  background-color: rgb(133, 131, 131);
+  background-color:rgb(182, 180, 180);
   margin-left: 930px;
   padding: 15px;
   text-align: center;
@@ -705,7 +733,7 @@ body .showcart .card3{
 }
 
 .head{
-    background-color: goldenrod;
+    background-color: #439643 ;
     border-radius: 3px;
     height: 3px;
     height: 40px;
@@ -722,18 +750,36 @@ body .showcart .card3{
     padding: 10px 0px;
     border-top: 1px solid #333;
 }
+
+.box29{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.9px solid#060606;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    height: 260px;
+    cursor: pointer;
+    margin-top: 40px;
+}
 .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid rgb(32, 48, 218);
+    border: 0.9px solid#060606;
     border-radius: 5px;
     padding: 15px;
     width: 200px;
     height: 260px;
+    cursor: pointer;
 
 
+}
+.box:hover{
+        box-shadow: 2px 2px 9px rgb(102, 101, 101);
 }
 .img-box{
     width: 100%;
@@ -747,6 +793,13 @@ body .showcart .card3{
     max-height: 90%;
     object-fit: cover;
     object-position: center;
+    
+}
+.image img{
+        box-shadow: 2px 2px 9px rgb(102, 101, 101);
+}
+.root2{
+    display: flex;
 }
 .bottom{
     margin-top: 20px;
@@ -764,12 +817,15 @@ h2{
     color: red;
 
 }
+#root{
+    margin-left: 10px;
+}
 button{
     width: 100%;
     position: relative;
     border: none;
     border-radius: 5px;
-    background-color: goldenrod;
+    background-color: #439643;
     padding: 7px 25px;
     cursor: pointer;
     color: white;
@@ -777,6 +833,77 @@ button{
 }
 button:hover{
     background: #333;
+}
+
+.card23{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+cursor: pointer;
+
+}
+.card23:hover{
+    box-shadow: 10px black;
+}
+.card23 div{
+  
+    width: 370px;
+    border-radius: 10px;
+    height: 400px;
+    padding: 10px;
+
+}
+.box1{
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+   
+}
+.box2{
+ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/joshua-fernandez-dxAwStHCCgk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+}
+ .box3{
+     background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/fawazlul-rizqi--enfLijmvPA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+}
+.card23 div .text1{
+    color: #e6f23b;
+    font-size: 17px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.card23 div h4{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card23 div button{
+    background-color: #228b22;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transform: 0.2s ease;
+}
+.card23 div button:hover{
+    transform: scalex(1.1);
 }
 
 

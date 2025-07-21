@@ -1,14 +1,14 @@
 
 const product = [
   { id: 0, image: 'image/POWER-OIL-removebg-preview.png', title: 'ground nut oil', price: 120 },
-  { id: 1, image: 'image/orange-removebg-preview.png', title: 'Orange Juice', price: 120 },
-  { id: 2, image: 'image/apple-removebg-preview.png', title: 'Apple Juice', price: 190 },
-  { id: 3, image: 'image/toilet-removebg-preview.png', title: 'Toilet papper', price: 900 },
-  { id: 5, image: 'image/protein-removebg-preview.png', title: 'Protein Shake', price: 120 },
-   { id: 6, image: 'image/pizza-removebg-preview.png', title: 'Pizza', price: 120 },
-    { id: 7, image: 'image/banana-removebg-preview.png', title: 'Banana', price: 120 },
-     { id: 9, image: 'image/snack-removebg-preview.png', title: 'Potatoes-Snack', price: 120 },
-      { id: 10, image: 'image/beef-removebg-preview.png', title: 'Beef', price: 120 },
+  { id: 1, image: 'image/POWER-OIL-removebg-preview.png', title: 'ground nut oil', price: 120 },
+  { id: 2, image: 'image/POWER-OIL-removebg-preview.png', title: 'red oil', price: 190 },
+  { id: 3, image: 'image/POWER-OIL-removebg-preview.png', title: 'sugar', price: 900 },
+  { id: 5, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+   { id: 6, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+    { id: 7, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+     { id: 9, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
+      { id: 10, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 },
        { id: 11, image: 'image/POWER-OIL-removebg-preview.png', title: 'milk', price: 120 }
   
 ];
@@ -17,10 +17,10 @@ const product = [
 const categories = [...new Map(product.map(item => [item.id, item])).values()];
 
 let i = 0;
-document.getElementById('root').innerHTML = categories.map((item) => {
+document.getElementById('root2').innerHTML = categories.map((item) => {
   const { image, title, price } = item;
   return `
-    <div class='box'>
+    <div class='box29'>
       <div class='img-box'>
         <img class='images' src="${image}" />
       </div>
@@ -31,7 +31,7 @@ document.getElementById('root').innerHTML = categories.map((item) => {
       </div>
     </div>
   `;
-}).join('    ');
+}).join('');
 
 let cart = [];
 function addtocart(index) {
@@ -44,7 +44,7 @@ function addtocart(index) {
 
   displaycart();
   updateTotal();
-;
+  document.getElementById("count").innerText = cart.length;
   toggleCart();
   saveCartToLocalStorage();
   document.getElementById("sidebar").style.display = "block";
@@ -118,6 +118,9 @@ function saveCartToLocalStorage() {
 }
 
 
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 function loadCartFromLocalStorage() {
   const saved = localStorage.getItem('cart');
@@ -135,6 +138,11 @@ window.onload = function() {
 function updateTotal() {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   document.getElementById('total').innerText = `$ ${total.toFixed(2)}`;
+}
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
 }
 
 

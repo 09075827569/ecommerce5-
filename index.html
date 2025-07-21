@@ -26,14 +26,15 @@
 </div>
 <!-- section2 -->
 <div class="section2">
-    <div>
-     <ul>
+    <div >
+     <ul style="margin-left: 50px;">
         <li><a href="#">About us</a></li>
            <li><a href="#">My account</a></li>
               <li><a href="#">whishlist</a></li>
               <h4 s>we deliver to you every day from <span style="color: red;">7:00 to 23:00</span></h4>
      </ul>
-     <ul style="margin-left: 150px; gap: 10px;">
+     
+      <ul style="">
         <li><a href="#">English</a></li>
            <li><a href="#">USD</a></li>
               <li><a href="#">Order Tracking</a></li>
@@ -65,17 +66,17 @@
     <div class="sidebar1">
     <ul>
         <li><a href=""> <i class="ri-store-line"></i> All categories</a></li>
-         <li><a href=""><img src="/" alt="" height="30px" width="30px"> Fruit & Vegetables</a></li>
-          <li><a href=""></i>Meats & Sea foods</a></li>
-           <li><a href="">Breakfast & Dairy</a></li>
-            <li><a href="">  <i class="ri-store-line"></i>reads & Bakery</a></li>
-             <li><a href=""> Beverages</a></li>
-              <li><a href="">Frozen foods</a></li>
-               <li><a href="">Biscuit & Snacks</a></li>
-                <li><a href="">Grocery & Staples</a></li>
-                 <li><a href="">Household needs</a></li>
-                  <li><a href="">Healthcare</a></li>
-                   <li><a href="">Baby & Pregnancy</a></li>
+         <li><a href=""><img src="/image/icons8-fruits-66.png" alt="" height="30px" width="30px"> Fruit & Vegetables</a></li>
+          <li><a href=""><img src="/image/icons8-meat-64.png" alt="" width="30px" height="30px"></i>Meats & Sea foods</a></li>
+           <li><a href=""><img src="/image/icons8-breakfast-64 (1).png" alt="" width="30px" height="30px">Breakfast & Dairy</a></li>
+            <li><a href="">  <img src="" alt="" width="30px" height="30px">breads & Bakery</a></li>
+             <li><a href=""><img src="" alt="" width="30px" height="30px"> Beverages</a></li>
+              <li><a href=""><img src="" alt="" width="30px" height="30px">Frozen foods</a></li>
+               <li><a href=""><img src="" alt="" width="30px" height="30px">Biscuit & Snacks</a></li>
+                <lix><a href=""><img src="" alt="" width="30px" height="30px">Grocery & Staples</a></lix>
+                 <li><a href=""><img src="" alt="" width="30px" height="30px">Household needs</a></li>
+                  <li><a href=""><img src="" alt="" width="30px" height="30px">Healthcare</a></li>
+                   <li><a href=""><img src="" alt="" width="30px" height="30px">Baby & Pregnancy</a></li>
     </ul>
     </div>
     
@@ -125,10 +126,10 @@
 
   </div>
     <div class="write">
-        <button class="btn">Weekend discount</button><br>
+        <button class="btn" style="color: black;">Weekend discount</button><br>
        <p class="write3"> get the best quality <br>product at the lowest <br>
          price <br><p class="write2">we have prepared special discount for you on grocery <br>product.don't miss the oppourtunites</p></p>
-        <button class="bttn">shop now</button> <span>$27.99</span>
+        <button class="bttn">shop now</button><span style="color: rgb(218, 191, 42);font-size: 28px; font-weight: 300;">$55.99</span> <span style=" text-decoration: line-through; color: aliceblue; font-size: 20px;" >$27.99</span>
     </div>
  </div>
  </div>
@@ -242,7 +243,31 @@
    </div>
  </div> -->
 
-  <div id="root"></div> <!-- Products go here -->
+  <div id="root"></div> 
+  <div class="sidebar" id="sidebar">
+  <div class="head">
+    <p>My Cart</p>
+    <button class="close-sidebar" onclick="toggleSidebar()">✖</button>
+  </div>
+  <div id="cartitem">Your cart is empty</div>
+  <div class="foot">
+    <h3>Total</h3>
+    <h2 id="total">$ 0.00</h2>
+  </div>
+  
+</div> 
+
+</div>
+
+ <div class="card23">
+  <div class="box1"><p style="padding-top: 10px;"><span class="text1">only this week</span> <br> <h4>Quality eggs at an <br> affordable price</h4> <span class="text2">Eat one every day</span><br> <a href=""><button>Shop now <i class="ri-arrow-right-line"></i></button></a></p></div>
+    <div class="box2"> <div><p><span class="text1">only this week</span> <br> <h4>snacks that nourishes<br> our mind and body</h4> <span class="text2">shine the morning....</span><br> <a href="#"><button>Shop now <i class="ri-arrow-right-line"></i></button></a></p></div></div>
+      <div class="box3"> <div><p><span class="text1">only this week</span> <br> <h4>unbeatable quality <br> unbeatable prices</h4> <span class="text2">Only this week don't miss..</span><br> <a href="#"><button>Shop now <i class="ri-arrow-right-line"></i></button></a></p></div></div>
+      
+ </div>
+
+  
+  <div id="root2"></div> <!-- Products go here -->
   <div class="sidebar" id="sidebar">
   <div class="head">
     <p>My Cart</p>
@@ -256,8 +281,10 @@
   
 </div>
 
-  
+</div>
+
  <script src="script2.js" ></script>
+ <script src = "script3.js"></script>
 
 </body>
 </html>

@@ -1,14 +1,49 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-size: 18px;
+    margin: ;
+    padding: 20;
+    
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+   
+
 }
-`
+img{
+    width: 200px;
+    height: 200px;
+}
+#heading1{
+    background: wheat;
+    padding-bottom: 30px;
+    
+}
+#heading2{
+    background-color: cadetblue;
+  text-align: center;
+  height: 50px;
+}
+h3{
+    color: red;
+}
+h3 #total{
+    color: green;
+   
+}
+#cartitem{
+  font-size: large;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+.cart1{
+   justify-content: space-between;
+    text-align: center;
+  
+   
+    
+}
+span{
+
+}
+#cart-item{
+    display: flex;
+    color: aqua;
+}

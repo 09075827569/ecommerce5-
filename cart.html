@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <title>My Cart</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    img{
+      height: 200px;
+      width: 200px;
+    }
+  </style>
 </head>
-<body>
-  <h1 style="text-align:center;">Cart Items</h1>
-  <div id="cart-details" style="padding: 20px;"></div>
-<body>
-  <h1>Your Cart</h1>
+
+  <h1 style="text-align:center;" id="heading1">Cart Items</h1>
+  <h1 id="heading2">Your Cart</h1>
+  <div>
   <div id="cartitem"></div>
   <h3>Total: <span id="total">$0.00</span></h3>
   <span>Items in cart: <span id="count">0</span></span>
-</body>
+  </div>
+
 
   <script>
   let cart = [];
