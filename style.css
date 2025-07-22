@@ -905,6 +905,21 @@ cursor: pointer;
 .card23 div button:hover{
     transform: scalex(1.1);
 }
+  .hamburger {
+  display: none;
+  font-size: 30px;
+  position: fixed;
+  top: 40px;
+  /* left: 20px; */
+  right: 0%;
+  z-index: 1001;
+  cursor: pointer;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+  
 
 
 @media only screen and (max-width:564px){
@@ -1014,7 +1029,49 @@ cursor: pointer;
     .card3{
         width: 400px;
     }
+     .sidebar1 {
+  width: 350px;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  z-index: 999;
+  transition: right 0.5s ease;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
    
     
    
+}
+@media (max-width: 768px) {
+  
+  .sidebar1 {
+  width: 200px;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  z-index: 999;
+  transition: right 0.5s ease;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+/* Show sidebar when active */
+body.showSidebar .sidebar1 {
+  right: 0;
+}
+  
+    .hamburger {
+    display: block;
+  }
+
+  .sidebar1 {
+    width: 30%;
+  }
 }

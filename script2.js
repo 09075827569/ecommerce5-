@@ -116,6 +116,10 @@ function changeQuantity(index, delta) {
 function saveCartToLocalStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+}
 
 
 
@@ -136,5 +140,12 @@ function updateTotal() {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   document.getElementById('total').innerText = `$ ${total.toFixed(2)}`;
 }
+  const hamburger = document.getElementById('hamburger');
+  const body = document.body;
+
+  hamburger.addEventListener('click', () => {
+    body.classList.toggle('showSidebar');
+  });
+
 
 
