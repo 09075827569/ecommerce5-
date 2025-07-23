@@ -13,6 +13,7 @@ const product = [
   
 ];
 
+
 // Remove duplicates if necessary (e.g. by id)
 const categories = [...new Map(product.map(item => [item.id, item])).values()];
 
@@ -94,11 +95,11 @@ function displaycart() {
           <p style='font-size:12px;'>${item.title}</p>
           <h2 style='font-size:15px;'>$ ${item.price * item.quantity}.00</h2>
           <div>
-            <button onclick='changeQuantity(${index}, -1)'>-</button>
+            <button class='btnnn' onclick='changeQuantity(${index}, -1)'>-</button>
             <span>${item.quantity}</span>
-            <button onclick='changeQuantity(${index}, 1)'>+</button>
+            <button class='btnnn' onclick='changeQuantity(${index}, 1)'>+</button>  <i class='fa-solid fa-trash' onclick='delElement(${index})'></i>
           </div>
-          <i class='fa-solid fa-trash' onclick='delElement(${index})'></i>
+          
         </div>
       `;
     }).join('');
@@ -149,3 +150,36 @@ function updateTotal() {
 
 
 
+// Sample data for new products
+const newItems = [
+  { id: 12, image: 'image/honey.png', title: 'Golden Honey', price: 180 },
+  { id: 13, image: 'image/cereal.png', title: 'Organic Cereal', price: 125 },
+  { id: 14, image: 'image/milk.png', title: 'Fresh Milk', price: 90 },
+  { id: 15, image: 'image/honey.png', title: 'Golden Honey', price: 180 },
+  { id: 16, image: 'image/cereal.png', title: 'Organic Cereal', price: 125 },
+  { id: 17, image: 'image/milk.png', title: 'Fresh Milk', price: 90 },
+   { id: 18, image: 'image/milk.png', title: 'Fresh Milk', price: 90 },
+   { id: 19, image: 'image/milk.png', title: 'Fresh Milk', price: 90 },
+   { id: 20, image: 'image/milk.png', title: 'Fresh Milk', price: 90 },
+   { id: 21, image: 'image/milk.png', title: 'Fresh Milk', price: 90 }
+];
+
+// Add new items to categories array
+newItems.forEach(item => categories.push(item));
+let j = categories.length - newItems.length; // starting index for new items
+
+document.getElementById('root2').innerHTML = newItems.map((item) => {
+  const { image, title, price } = item;
+  return `
+    <div class='box'>
+      <div class='img-box'>
+        <img class='images' src="${image}" />
+      </div>
+      <div class='bottom'>
+        <p>${title}</p>
+        <h2>$ ${price}.00</h2>
+        <button onclick='addtocart(${j++})'>Add to cart</button>
+      </div>
+    </div>
+  `;
+}).join('');

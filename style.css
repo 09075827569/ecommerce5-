@@ -14,6 +14,7 @@
     
     
 }
+
 body{
    background: rgba(0,0,0,0.1);
 }
@@ -78,7 +79,7 @@ background-color: ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 gap: 20px;
 
 }
@@ -97,16 +98,26 @@ gap: 20px;
 
 .section3 input{
     width: 600px;
-    margin-left: 50px;
+    margin-left: px;
     margin-right: 40px;
     height: 1px;
     border-radius: 10px;
     border: 1px solid black;
     outline: blueviolet;
     background: rgb(243, 240, 240);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .section3 input ::placeholder{
  
+}
+.logo{
+    background-color: #abc6ab;
+    height: 50px;
+    padding-top: 0px;
+ border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #search{
     padding: 20px;
@@ -305,7 +316,7 @@ font-family:  Special Gothic Condensed One;
     margin-top: 30px;
     justify-content: center;
     /* align-items: center; */
-       box-shadow: 1px black;
+       
 }
 .cards div{
     margin-left: 30px;
@@ -317,6 +328,7 @@ font-family:  Special Gothic Condensed One;
     padding: 10px;
     cursor: pointer;
     border: 1px solid black;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
    
 }
 .cards div:hover{
@@ -347,7 +359,7 @@ cursor: pointer;
     background-size: cover;
     background-color: #f0e7b4;
     color: #f1f1f1;
-   
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .box2{
  background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/joshua-fernandez-dxAwStHCCgk-unsplash.jpg);
@@ -356,6 +368,7 @@ cursor: pointer;
     background-size: cover;
     background-color: #f0e7b4;
     color: #f1f1f1;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
  .box3{
      background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/fawazlul-rizqi--enfLijmvPA-unsplash.jpg);
@@ -364,6 +377,7 @@ cursor: pointer;
     background-size: cover;
     background-color: #f0e7b4;
     color: #f1f1f1;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .card2 div .text1{
     color: #e6f23b;
@@ -627,8 +641,9 @@ body .showcart .card3{
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
-    border-radius: 3px;
+    border-radius: 20px;
     width: 80px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 }
 .fa-solid{
@@ -819,6 +834,17 @@ h2{
 }
 #root{
     margin-left: 10px;
+    flex-wrap: wrap;
+}
+.btnnn{
+    width: 5%;
+    border-radius: ;
+}
+.row-img{
+    margin-top: 20px;
+}
+.cart-item{
+    line-height: 20px;
 }
 button{
     width: 100%;
@@ -840,7 +866,8 @@ display: flex;
 justify-content: space-around;
 margin-top: 30px;
 cursor: pointer;
-
+margin-bottom: 20px;
+flex-wrap: nowrap;
 }
 .card23:hover{
     box-shadow: 10px black;
@@ -854,7 +881,7 @@ cursor: pointer;
 
 }
 .box1{
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png);
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/liana-s-qjR9lIhHUHs-unsplash-removebg-preview.png\);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -876,6 +903,34 @@ cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #f0e7b4;
+    color: #f1f1f1;
+}
+.box11{
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/hybrid-storytellers-wC_2vv5TAZI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+   
+}
+.box12{
+ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/adiptalk-3VoUDb-sVt4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+    color: #f1f1f1;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+ .box13{
+     background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/perfect-snacks-Mlnm1HX2Hrk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e7b4;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: #f1f1f1;
 }
 .card23 div .text1{
@@ -943,9 +998,8 @@ cursor: pointer;
        font-size: large;
     }
     .section2{
-        display: block;
-        font-size: 10px;
-        padding: 0;
+   
+   
     }
     .section2 div ul{
       padding: 10px;
@@ -1023,6 +1077,7 @@ cursor: pointer;
       margin-left: 100px;
       padding-left: 20px;
     }
+    
     .container div{
       
     }
@@ -1074,4 +1129,22 @@ body.showSidebar .sidebar1 {
   .sidebar1 {
     width: 30%;
   }
+  .section1 {
+ width: 1250px;
+  }
+  .section2{
+    padding-left: 500px; 
+  }
+  .section3{
+    margin-left: 100px;
+    justify-content: space-between;
+    width: 1000px;
+  
+  }
+  .section3 input{
+    width: 1000px;
+  }
+ .write{
+    width: 1140px;
+ }
 }
